@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>找不到頁面｜Todo Matrix</title>
+  <link id="site-styles" rel="stylesheet" href="../styles.css">
+</head>
+<body class="error-page">
+  <main class="error-card ruled-paper">
+    <p class="error-code">404</p>
+    <h1>這一頁不在待辦清單裡</h1>
+    <p>網址可能已變更，或輸入時不小心多了一個字。</p>
+    <a id="support-home" class="button" href="../" data-support-home>回到 Todo Matrix 支援中心</a>
+  </main>
+  <script data-support-home>
+    (() => {
+      const isGitHubPages = location.hostname.endsWith(".github.io");
+      const repository = location.pathname.split("/").filter(Boolean)[0];
+      const basePath = isGitHubPages && repository ? `/${repository}/` : "/";
+      const home = location.protocol === "file:"
+        ? new URL("./", location.href)
+        : new URL(basePath, location.origin);
+
+      document.getElementById("support-home").href = home.href;
+      document.getElementById("site-styles").href = new URL("styles.css", home).href;
+    })();
+  </script>
+</body>
+</html>
