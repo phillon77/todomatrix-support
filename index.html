@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Todo Matrix 使用說明、常見問題與支援資訊。">
+  <title>Todo Matrix｜支援中心</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Todo Matrix 支援中心首頁">
+      <span class="brand-mark" aria-hidden="true">✓</span>
+      <span>Todo Matrix</span>
+    </a>
+    <nav aria-label="主要導覽">
+      <a href="#quick-start">快速開始</a>
+      <a href="#faq">常見問題</a>
+      <a href="privacy.html">隱私權</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero ruled-paper" aria-labelledby="hero-title">
+      <p class="eyebrow">四象限待辦與優先順序管理</p>
+      <h1 id="hero-title">把注意力放在<br><span>真正重要的事情</span>上</h1>
+      <p class="lede">Todo Matrix 運用艾森豪矩陣，依照重要性與緊急性整理待辦事項。簡單分類，清楚行動，不需要複雜設定。</p>
+      <a class="button" href="#quick-start">開始整理</a>
+    </section>
+
+    <section class="section" aria-labelledby="matrix-title">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <div>
+          <p class="eyebrow">艾森豪矩陣</p>
+          <h2 id="matrix-title">四個象限，四種行動</h2>
+        </div>
+      </div>
+      <div class="matrix-grid">
+        <article class="quadrant q1"><span>I</span><h3>立即處理</h3><p>重要且緊急</p></article>
+        <article class="quadrant q2"><span>II</span><h3>安排時間</h3><p>重要但不緊急</p></article>
+        <article class="quadrant q3"><span>III</span><h3>快速或委派</h3><p>不重要但緊急</p></article>
+        <article class="quadrant q4"><span>IV</span><h3>延後或刪除</h3><p>不重要且不緊急</p></article>
+      </div>
+    </section>
+
+    <section class="section ruled-paper" id="quick-start" aria-labelledby="start-title">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <div><p class="eyebrow">快速開始</p><h2 id="start-title">三步完成第一次整理</h2></div>
+      </div>
+      <ol class="steps">
+        <li><strong>新增任務</strong><span>點一下新增按鈕，寫下要完成的事情。</span></li>
+        <li><strong>判斷優先順序</strong><span>選擇是否重要、是否緊急，任務會進入對應象限。</span></li>
+        <li><strong>持續調整</strong><span>拖曳任務即可改變象限；完成後也能從已完成頁面恢復。</span></li>
+      </ol>
+    </section>
+
+    <section class="section split" aria-labelledby="reminders-title">
+      <div>
+        <p class="eyebrow">原生整合</p>
+        <h2 id="reminders-title">與 Apple 提醒事項連動</h2>
+      </div>
+      <div>
+        <p>Todo Matrix 使用 Apple EventKit 讀取及更新你授權的提醒事項。建立、完成或恢復任務時，內容與狀態會同步反映在 Apple 提醒事項中。</p>
+        <p>首次使用時，請依系統提示允許提醒事項存取。你可以隨時在系統設定中調整權限。</p>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <div><p class="eyebrow">需要協助？</p><h2 id="faq-title">常見問題</h2></div>
+      </div>
+      <div class="faq-list">
+        <details><summary>任務為什麼沒有出現在預期的象限？</summary><p>象限由「重要」及「緊急」兩個狀態決定。編輯任務，確認這兩個選項，或直接將任務拖曳到想要的象限。</p></details>
+        <details><summary>如何恢復已完成的任務？</summary><p>前往已完成頁面，找到該任務並選擇恢復；任務會回到原本的象限。</p></details>
+        <details><summary>為什麼看不到提醒事項？</summary><p>請到系統設定確認 Todo Matrix 已取得提醒事項權限。若仍無法顯示，可關閉並重新開啟 App。</p></details>
+        <details><summary>Todo Matrix 是完整的 GTD 工具嗎？</summary><p>Todo Matrix 參考 GTD 與時間管理概念，核心是用艾森豪矩陣整理優先順序，並不提供完整的 GTD 工作流程。</p></details>
+      </div>
+    </section>
+
+    <section class="support-card" aria-labelledby="support-title">
+      <p class="eyebrow">仍需要協助？</p>
+      <h2 id="support-title">告訴我們遇到的問題</h2>
+      <p>請透過公開的 GitHub Issues 描述問題。送出前，請移除提醒內容、姓名或其他個人資料。</p>
+      <a class="button dark" href="https://github.com/phillon77/todomatrix-support/issues" rel="noopener noreferrer">前往 GitHub Issues</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Todo Matrix 支援中心</p>
+    <p><a href="privacy.html">隱私權政策</a></p>
+  </footer>
+</body>
+</html>
